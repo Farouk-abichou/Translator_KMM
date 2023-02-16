@@ -1,21 +1,19 @@
 package com.example.translator_kmm.android.translate.presentation
 
-import TranslateViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.translator_kmm.translate.domain.history.HistoryDataSource
 import com.example.translator_kmm.translate.domain.translate.Translate
+import TranslateViewModel
 import com.example.translator_kmm.translate.presentation.TranslateEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
-
-
 
 @HiltViewModel
 class AndroidTranslateViewModel @Inject constructor(
     private val translate: Translate,
     private val historyDataSource: HistoryDataSource
-) : ViewModel(){
+): ViewModel() {
 
     private val viewModel by lazy {
         TranslateViewModel(
@@ -27,7 +25,7 @@ class AndroidTranslateViewModel @Inject constructor(
 
     val state = viewModel.state
 
-    fun onEvent(event: TranslateEvent){
+    fun onEvent(event: TranslateEvent) {
         viewModel.onEvent(event)
     }
 }
