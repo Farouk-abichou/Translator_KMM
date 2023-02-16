@@ -1,13 +1,12 @@
 package com.example.translator_kmm.translate.domain.translate
 
-import com.example.translator_kmm.core.domain.history.HistoryDataSource
 import com.example.translator_kmm.core.domain.history.HistoryItem
 import com.example.translator_kmm.core.domain.language.Language
 import com.example.translator_kmm.core.domain.util.Resource
 
 class Translate(
     private val client: TranslateClient,
-    private val historyDataSource: HistoryDataSource
+    private val historyDataSource: com.example.translator_kmm.translate.domain.history.HistoryDataSource
 ) {
 
     suspend fun execute(

@@ -6,8 +6,12 @@ import androidx.lifecycle.viewModelScope
 import com.example.translator_kmm.translate.domain.history.HistoryDataSource
 import com.example.translator_kmm.translate.domain.translate.Translate
 import com.example.translator_kmm.translate.presentation.TranslateEvent
+import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
+
+
+@HiltViewModel
 class AndroidTranslateViewModel @Inject constructor(
     private val translate: Translate,
     private val historyDataSource: HistoryDataSource
