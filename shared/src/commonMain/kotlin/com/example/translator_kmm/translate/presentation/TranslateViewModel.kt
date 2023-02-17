@@ -1,10 +1,14 @@
 
+
 import com.example.translator_kmm.core.domain.util.Resource
 import com.example.translator_kmm.core.domain.util.toCommonStateFlow
 import com.example.translator_kmm.core.presentation.UiLanguage
 import com.example.translator_kmm.translate.domain.history.HistoryDataSource
 import com.example.translator_kmm.translate.domain.translate.Translate
 import com.example.translator_kmm.translate.domain.translate.TranslateException
+import com.example.translator_kmm.translate.presentation.TranslateEvent
+import com.example.translator_kmm.translate.presentation.TranslateState
+import com.example.translator_kmm.translate.presentation.UiHistoryItem
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -13,8 +17,8 @@ import kotlinx.coroutines.launch
 
 class TranslateViewModel(
     private val translate: Translate,
-    private val historyDataSource: HistoryDataSource,
-    private val coroutineScope: CoroutineScope?
+    historyDataSource: HistoryDataSource,
+    coroutineScope: CoroutineScope?
 ) {
 
     private val viewModelScope = coroutineScope ?: CoroutineScope(Dispatchers.Main)
