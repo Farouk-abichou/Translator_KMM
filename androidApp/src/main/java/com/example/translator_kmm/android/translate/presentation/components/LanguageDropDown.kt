@@ -2,9 +2,7 @@ package com.example.translator_kmm.android.translate.presentation.components
 
 import androidx.compose.foundation.clickable
 import com.example.translator_kmm.android.core.theme.LightBlue
-import com.plcoding.translator_kmm.core.presentation.UiLanguage
-
-import androidx.compose.foundation.clickable
+import com.example.translator_kmm.core.presentation.UiLanguage
 
 import androidx.compose.material.DropdownMenu
 import androidx.compose.material.Icon

@@ -3,9 +3,8 @@ package com.example.translator_kmm.android.core.theme
 
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
-import androidx.compose.ui.graphics.BlendMode.Companion.Color
 import androidx.compose.ui.graphics.Color
-import com.plcoding.translator_kmm.core.presentation.Colors
+import com.example.translator_kmm.core.presentation.Colors
 
 val AccentViolet = Color(Colors.AccentViolet)
 val LightBlue = Color(Colors.LightBlue)

@@ -7,10 +7,9 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.input.KeyboardType.Companion.Text
 import androidx.compose.ui.unit.dp
 import com.example.translator_kmm.android.core.theme.LightBlue
-import com.plcoding.translator_kmm.core.presentation.UiLanguage
+import com.example.translator_kmm.core.presentation.UiLanguage
 
 @Composable
 fun LanguageDisplay(

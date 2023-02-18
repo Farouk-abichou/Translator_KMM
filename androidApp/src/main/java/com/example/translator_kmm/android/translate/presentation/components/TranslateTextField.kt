@@ -22,7 +22,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
-import com.plcoding.translator_kmm.core.presentation.UiLanguage
+import com.example.translator_kmm.core.presentation.UiLanguage
 import com.example.translator_kmm.android.R
 import com.example.translator_kmm.android.core.theme.LightBlue
 

@@ -24,9 +24,9 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
-import com.plcoding.translator_kmm.translate.domain.translate.TranslateError
-import com.plcoding.translator_kmm.translate.presentation.TranslateEvent
-import com.plcoding.translator_kmm.translate.presentation.TranslateState
+import com.example.translator_kmm.translate.domain.translate.TranslateError
+import com.example.translator_kmm.translate.presentation.TranslateEvent
+import com.example.translator_kmm.translate.presentation.TranslateState
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
