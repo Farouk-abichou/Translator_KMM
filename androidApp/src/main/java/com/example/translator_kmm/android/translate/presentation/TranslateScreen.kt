@@ -19,14 +19,14 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.unit.dp
 import com.example.translator_kmm.android.R
 import com.example.translator_kmm.android.translate.presentation.components.*
-import com.example.translator_kmm.translate.domain.translate.TranslateError
-import com.example.translator_kmm.translate.presentation.TranslateEvent
-import com.example.translator_kmm.translate.presentation.TranslateState
 import java.util.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
+import com.plcoding.translator_kmm.translate.domain.translate.TranslateError
+import com.plcoding.translator_kmm.translate.presentation.TranslateEvent
+import com.plcoding.translator_kmm.translate.presentation.TranslateState
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable

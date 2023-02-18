@@ -3,13 +3,13 @@ package com.example.translator_kmm.android.di
 
 import android.app.Application
 import com.example.translator_kmm.database.TranslateDatabase
-import com.example.translator_kmm.translate.data.history.SqlDelightHistoryDataSource
-import com.example.translator_kmm.translate.data.local.DatabaseDriverFactory
-import com.example.translator_kmm.translate.data.remote.HttpClientFactory
-import com.example.translator_kmm.translate.data.translate.KtorTranslateClient
-import com.example.translator_kmm.translate.domain.history.HistoryDataSource
-import com.example.translator_kmm.translate.domain.translate.Translate
-import com.example.translator_kmm.translate.domain.translate.TranslateClient
+import com.plcoding.translator_kmm.translate.data.history.SqlDelightHistoryDataSource
+import com.plcoding.translator_kmm.translate.data.local.DatabaseDriverFactory
+import com.plcoding.translator_kmm.translate.data.remote.HttpClientFactory
+import com.plcoding.translator_kmm.translate.data.translate.KtorTranslateClient
+import com.plcoding.translator_kmm.translate.domain.history.HistoryDataSource
+import com.plcoding.translator_kmm.translate.domain.translate.Translate
+import com.plcoding.translator_kmm.translate.domain.translate.TranslateClient
 import com.squareup.sqldelight.db.SqlDriver
 import dagger.Module
 import dagger.Provides

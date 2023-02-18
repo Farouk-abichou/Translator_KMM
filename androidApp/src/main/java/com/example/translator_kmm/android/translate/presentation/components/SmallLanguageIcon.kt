@@ -5,7 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.example.translator_kmm.core.presentation.UiLanguage
+import com.plcoding.translator_kmm.core.presentation.UiLanguage
 
 @Composable
 fun SmallLanguageIcon(

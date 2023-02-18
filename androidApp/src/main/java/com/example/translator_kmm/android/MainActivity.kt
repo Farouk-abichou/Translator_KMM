@@ -18,7 +18,7 @@ import androidx.navigation.navArgument
 import com.example.translator_kmm.android.core.presentation.Routes
 import com.example.translator_kmm.android.translate.presentation.AndroidTranslateViewModel
 import com.example.translator_kmm.android.translate.presentation.TranslateScreen
-import com.example.translator_kmm.translate.presentation.TranslateEvent
+import com.plcoding.translator_kmm.translate.presentation.TranslateEvent
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyApplicationTheme {
+            TranslatorTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
