@@ -18,7 +18,10 @@ import androidx.navigation.navArgument
 import com.example.translator_kmm.android.core.presentation.Routes
 import com.example.translator_kmm.android.translate.presentation.AndroidTranslateViewModel
 import com.example.translator_kmm.android.translate.presentation.TranslateScreen
+import com.example.translator_kmm.android.voice_to_text.presentation.AndroidVoiceToTextViewModel
+import com.example.translator_kmm.android.voice_to_text.presentation.VoiceToTextScreen
 import com.example.translator_kmm.translate.presentation.TranslateEvent
+import com.example.translator_kmm.voice_to_text.presentation.VoiceToTextEvent
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -70,8 +73,29 @@ fun TranslateRoot() {
                     defaultValue = "en"
                 }
             )
-        ) {
-            Text(text = "Voice-to-Text")
+        ) { backStackEntry ->
+            val languageCode = backStackEntry.arguments?.getString("languageCode") ?: "en"
+            val viewModel = hiltViewModel<AndroidVoiceToTextViewModel>()
+            val state by viewModel.state.collectAsState()
+
+            VoiceToTextScreen(
+                state = state,
+                languageCode = languageCode,
+                onResult = { spokenText ->
+                    navController.previousBackStackEntry?.savedStateHandle?.set(
+                        "voiceResult", spokenText
+                    )
+                    navController.popBackStack()
+                },
+                onEvent = { event ->
+                    when(event) {
+                        is VoiceToTextEvent.Close -> {
+                            navController.popBackStack()
+                        }
+                        else -> viewModel.onEvent(event)
+                    }
+                }
+            )
         }
     }
 }
