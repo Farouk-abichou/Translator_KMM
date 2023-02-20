@@ -63,6 +63,7 @@ dependencies {
     androidTestImplementation(Deps.testRunner)
     androidTestImplementation(Deps.jUnit)
     androidTestImplementation(Deps.composeTesting)
+    androidTestImplementation(Deps.rules)
     debugImplementation(Deps.composeTestManifest)
 
     kaptAndroidTest(Deps.hiltAndroidCompiler)

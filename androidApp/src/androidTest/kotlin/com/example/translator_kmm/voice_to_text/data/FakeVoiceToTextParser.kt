@@ -26,7 +26,7 @@ class FakeVoiceToTextParser : VoiceToTextParser {
 
     override fun stopListening() {
         _state.update { it.copy(
-            result = "test",
+            result = voiceResult,
             isSpeaking = false
         ) }
     }
