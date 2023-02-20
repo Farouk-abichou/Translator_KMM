@@ -15,6 +15,8 @@ android {
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
+
+        testInstrumentationRunner = "com.example.translator_kmm.TestHiltRunner"
     }
     buildFeatures {
         compose = true
